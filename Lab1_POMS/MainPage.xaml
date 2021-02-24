@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab1_POMS.MainPage">
+
+
+    <StackLayout Margin="10,30,10,0">
+        <Label Text="Расчет идеального веса через индекс массы тела" HorizontalTextAlignment="Center"  FontSize="Large"></Label>
+
+        <StackLayout x:Name="inputLayout" Orientation="Vertical" HorizontalOptions="Center" Spacing="40">
+            <StackLayout>
+                <Label  Margin="0,30,0,0" Text="Введите ваш рост" HorizontalOptions="Center" FontSize="26"></Label>
+                <Entry Keyboard="Numeric"  MaxLength="3" x:Name="gInput" Placeholder="Ваш рост" HorizontalTextAlignment="Center"></Entry>
+            </StackLayout>
+            <StackLayout>
+                <Label  Margin="0,30,0,0" Text="Введите ваш вес" HorizontalOptions="Center" FontSize="26"></Label>
+                <Entry Keyboard="Numeric" MaxLength="3" x:Name="wInput" Placeholder="Ваш вес" HorizontalTextAlignment="Center"></Entry>
+
+            </StackLayout>
+        </StackLayout>
+
+        <Button Margin="30,30,30,0" Text="Вычислить" Clicked="Button_Clicked"  ></Button>
+
+        <Button Text="Что?" TextColor="Beige" HorizontalOptions="CenterAndExpand" Clicked="ButtonWhat_Clicked"></Button>
+
+
+    </StackLayout>
+
+
+</ContentPage>
